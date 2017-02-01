@@ -1,2 +1,3 @@
 # TinyWebResume
-Web简历构建平台
+
+You can design your web resume by using our util
