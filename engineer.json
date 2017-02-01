@@ -1,0 +1,143 @@
+{
+  "project": {
+    "header": "项目经历",
+    "select-box": "One",
+    "sort": 3,
+    "nums": "4",
+    "project-group-1": {
+      "start": "2014.4",
+      "end": "2015.2",
+      "title": "大学生数学建模竞赛项目团队",
+      "key": "程序设计者",
+      "details": [
+        "负责算法设计与程序编写，主要探索图论算法，蚁群算法等。",
+        "在一个月的时间里自学了Matlab, LaTeX, Gephi等多种软件的操作。",
+        "团队获得广东赛区一等奖，全国二等奖等。"
+      ]
+    }, 
+    "project-group-2": {
+      "start": "2015.6",
+      "end": "2015.7",
+      "title": "响应式网站前端小组",
+      "key": "项目组员",
+      "details": [
+        "项目为多个主题网站。",
+        "运用Bootstrap进行响应式布局，使得网站具备多种设备的兼容性。",
+        "项目让自己对前端技术实现有了更好的理解，同时也提高了编程能力。"
+      ]
+    }, 
+    "project-group-3": {
+      "start": "2014.9",
+      "end": "2015.12",
+      "title": "CRM管理系统",
+      "key": "项目组员",
+      "details": [
+        "负责编写详细需求分析和客户管理模块。",
+        "实现了客户添加、客户修改、客户删除、批量删除客户、分页等几大功能。",
+        "分别用到Myeclipse开发工具、orcal数据库、ssh、javascript、jquery等开发技术，现几大功能运行稳定，运算速度明显变快。"
+      ]
+    }, 
+    "project-group-4": {
+      "start": "2014.9",
+      "end": "2015.6",
+      "title": "计算机学院青年志愿者协会",
+      "key": "部长",
+      "details": [
+        "负责部门日常工作。",
+        "组织年度大会、社团招新等多种活动。"
+      ]
+    }
+  },
+  "info": {
+    "header": "个人信息",
+    "select-box": "One",
+    "sort": 0,
+    "layout": "horizontal",
+    "data": {
+      "email": "Tiny@163.com",
+      "intension": "Web前端工程师",
+      "name": "Tiny",
+      "phone": "12345678900",
+      "photo": "default"
+    }
+  },
+  "edu": {
+    "header": "教育信息",
+    "select-box": "One",
+    "sort": 1,
+    "nums": "1",
+    "type": "standard",
+    "edu-group-1": {
+      "university": "Tiny大学",
+      "major": "软件工程",
+      "degree": "本科",
+      "gpa": "3.8",
+      "start": "2012",
+      "end": "2016",
+      "details": []
+    }
+  },
+  "job": {
+    "header": "工作经历",
+    "select-box": "One",
+    "sort": 2,
+    "nums": "1",
+    "job-group-1": {
+      "start": "2015.6",
+      "end": "2015.9",
+      "title": "Tiny网站开发公司",
+      "key": "Web前端实习生",
+      "details": [
+        "进行HTML, CSS与JavaScript的前端代码编写。",
+        "协助完成Bootstrap响应式布局的编程，了解到不同浏览器的兼容性。",
+        "实习期间参与公司多个项目的工作，积累了一定的团队工作经验。"
+      ]
+    }
+  },
+  "new1": {
+    "header": "获奖经历",
+    "select-box": "One",
+    "select-component": "text",
+    "sort": 4,
+    "nums": "4",
+    "new1-group-1": {
+      "start": "2015.10",
+      "end": "",
+      "title": "2014-2015学年国家奖学金",
+      "key": "",
+      "details": []
+    },
+    "new1-group-2": {
+      "start": "2015.10",
+      "end": "",
+      "title": "2013-2014学年校级优秀学生二等奖学金",
+      "key": "",
+      "details": []
+    },
+    "new1-group-3": {
+      "start": "2015.03",
+      "end": "",
+      "title": "ACM编程竞赛华南赛区二等奖",
+      "key": "",
+      "details": []
+    },
+    "new1-group-4": {
+      "start": "2014.05",
+      "end": "",
+      "title": "华南大学生软件开发大赛广州赛区三等奖",
+      "key": "",
+      "details": []
+    }
+  },
+  "basic": {
+    "color": "#fbcab5",
+    "fr-color": "#000000",
+    "general": {
+      "top-bottom": "35",
+      "left-right": "30",
+      "font-size": "14",
+      "layout": "0",
+      "symbol": "dist"
+    }
+  }
+}

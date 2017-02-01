@@ -1,0 +1,165 @@
+{
+  "project": {
+    "header": "项目经历",
+    "select-box": "One",
+    "sort": 4,
+    "nums": "2",
+    "project-group-1": {
+      "start": "2014.4",
+      "end": "2015.2",
+      "title": "联想手机UI主题设计大赛",
+      "key": "团队成员",
+      "details": [
+        "设计了一款XXX产品，运用了XXXX技术和XXX软件",
+        "在团队中主要负责产品受众调研和部分设计工作",
+        "在大赛中获得XX奖项，作品链接：XXXX.com"
+      ]
+    }, 
+    "project-group-2": {
+      "start": "2015.6",
+      "end": "2015.7",
+      "title": "Tiny大学学生会外联部",
+      "key": "副部长",
+      "details": [
+        "策划举办多场宣讲会，与企业沟通交涉，拉到多笔赞助",
+        "联系企业，组织学生和学生干部赴企业参观学习"
+      ]
+    }
+  },
+  "info": {
+    "header": "个人信息",
+    "select-box": "One",
+    "sort": 0,
+    "layout": "vertical",
+    "data": {
+      "email": "Tiny@163.com",
+      "intension": "UI设计",
+      "name": "Tiny",
+      "phone": "12345678900",
+      "photo": "default"
+    }
+  },
+  "edu": {
+    "header": "教育信息",
+    "select-box": "One",
+    "sort": 1,
+    "nums": "2",
+    "type": "brief",
+    "edu-group-1": {
+      "university": "Tiny大学",
+      "major": "艺术设计",
+      "degree": "本科",
+      "gpa": "",
+      "start": "2009",
+      "end": "2013",
+      "details": []
+    },
+    "edu-group-2": {
+      "university": "Self大学",
+      "major": "工业设计",
+      "degree": "硕士",
+      "gpa": "",
+      "start": "2013",
+      "end": "2016",
+      "details": []
+    }
+  },
+  "job": {
+    "header": "实习经历",
+    "select-box": "One",
+    "sort": 3,
+    "nums": "1",
+    "job-group-1": {
+      "start": "2015.6",
+      "end": "2015.9",
+      "title": "Tiny广告设计有限公司",
+      "key": "UI设计助理",
+      "details": [
+        "负责网站的UI设计（包括整体排版，相关图片制作，相关文字描述）",
+        "负责手机客户端产品GUI的整体风格设计，应用工具的相关菜单和界面制作",
+        "负责设计产品的界面以及icon等UI内容"
+      ]
+    }
+  },
+  "new1": {
+    "header": "专业技能",
+    "select-box": "One",
+    "select-component": "line-down",
+    "sort": 2,
+    "nums": "3",
+    "new1-group-1": {
+      "start": "",
+      "end": "",
+      "title": "Photoshop-Illustrator-Coreldraw-Flash",
+      "key": "",
+      "progress": "85",
+      "details": []
+    },
+    "new1-group-2": {
+      "start": "2015.04",
+      "end": "",
+      "title": "Html-Css-Javascript",
+      "key": "",
+      "progress": "50",
+      "details": []
+    },
+    "new1-group-3": {
+      "start": "",
+      "end": "",
+      "title": "Word-PPT-Excel",
+      "key": "",
+      "progress": "70",
+      "details": []
+    }
+  },
+  "new2": {
+    "header": "个人作品",
+    "select-box": "One",
+    "select-component": "text",
+    "sort": 5,
+    "nums": "1",
+    "new2-group-1": {
+      "start": "",
+      "end": "",
+      "title": "",
+      "key": "",
+      "details": [
+        "《cloud team》：一款企业协同办公与智能化管理的手机APP（2015.05）",
+        "《安居家居》：一款帮助用户选择家居用品的手机购物APP（2014.09）",
+        "《咖啡》：以“咖啡”为内容的安卓手机主题（2014.02）",
+        "《猫咪》：以“萌萌的猫咪”为内容的安卓手机主题（2013.10）"
+      ]
+    }
+  },
+  "new3": {
+    "header": "兴趣爱好",
+    "select-box": "One",
+    "select-component": "text",
+    "sort": 6,
+    "nums": "1",
+    "new3-group-1": {
+      "start": "",
+      "end": "",
+      "title": "",
+      "key": "",
+      "details": [
+        "漫画，从小学开始画漫画",
+        "熟知并喜欢阅读各类时尚杂志和设计类刊物"
+      ]
+    }
+  },
+  "basic": {
+    "general": {
+      "top-bottom": "45",
+      "left-right": "30",
+      "font-size": "14",
+      "layout": "0",
+      "symbol": "re-correct"
+    },
+    "title": {
+      "color": "orange",
+      "fr-color": "#000000",
+      "style": "bottom"
+    }
+  }
+}
