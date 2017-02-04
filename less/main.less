@@ -1,0 +1,132 @@
+/**
+ * [main.less]包含公共参数及样式设置
+ *
+ * @base-padding  {[公用默认padding]}
+ * @base-margin   {[公用默认margin]}
+ * @base-radius   {[公用默认border-radius]}
+ * @base-z-index  {[公用最低10,最高100,分为10级]}
+ * @background    {[默认基准背景色调]}
+ * @header-height {[顶部header高度]}
+ * @sidebar-width {[左侧工具栏宽度]}
+ * @config-width  {[右侧配置栏宽度]}
+ */
+@base-padding: 15px;
+@base-margin: 15px;
+@base-radius: 5px;
+@base-z-index: 10;
+@background: #2eafb5;
+@header-height: 100px;
+@sidebar-width: 160px;
+@config-width: 340px;
+
+@background-gray: #f6f7f9; /* 浅灰色背景 */
+@color-cancel: #eee; /* 取消按钮颜色 */
+
+html,
+body {
+  height: 100%;
+  background-color: #fdfdfd;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  text-align: center;
+  color: @background;;
+}
+main{
+  padding: @base-padding * 2 @base-padding;
+}
+input:invalid,
+input:focus:invalid {
+  border-color: #d9534f;
+  box-shadow: 0 0 8px #d9534f;
+}
+.btn-main {
+  border-radius: @base-radius;
+  border-color: darken(@background, 5%);
+  color: contrast(@background);
+  background-color: @background;
+  &:hover {
+    background-color: darken(@background, 5%);
+    transition: background-color .3s ease-in;
+  }
+}
+.btn-cancel {
+  border-radius: @base-radius;
+  border-color: darken(@color-cancel, 10%);
+  color: contrast(@color-cancel);
+  background-color: @color-cancel;
+  &:hover {
+    background-color: darken(@color-cancel, 10%);
+    transition: background-color .3s ease-in;
+  }
+}
+.page {
+  display: none;
+  height: 100%;
+  &.page-active {
+    display: block;
+  }
+}
+
+/* 导航条控制 */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  &-track {
+    border-radius: @base-radius;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+  &-thumb {
+    border-radius: @base-radius;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #ccc;  
+  }
+}
+
+/* 弹出框 */
+.cmpt-pop-up {
+  position: relative;
+  .pop-body {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    right: 0;  
+    border: 1px solid #ccc;
+    border-radius: @base-radius;
+    color: @background;
+    background: contrast(@background);
+    &:before {
+      position: absolute;  
+      margin: auto;
+      left: 0;
+      right: 0;
+      content: '';
+      width: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+  }
+  .pop-up {
+    bottom: calc(~"100% + 10px");
+    &:before {
+      bottom: -10px;
+      border-top: 10px solid #ccc;
+    }
+  }
+  .pop-down {
+    top: calc(~"100% + 10px");
+    &:before {
+      top: -10px;
+      border-bottom: 10px solid contrast(@background);;
+    }
+  }
+  button {
+    float: left;
+    width: 50%;
+  }
+}

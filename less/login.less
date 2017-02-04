@@ -1,0 +1,112 @@
+.login {
+  header {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  main {
+    padding: 0;
+    margin-top: -@header-height;
+    height: inherit;
+    background-image: url(../image/01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  form { 
+    position: absolute;
+    margin: auto; 
+    padding: @base-padding; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    height: 195px;
+    background-color: rgba(246, 247, 249, 0.7);
+    border-radius: 10px;
+    .form-group {
+      padding: 0 @base-padding;
+    }
+    .lg-message {
+      float: right;
+      color: #d9534f;
+    }
+  }
+  .warning {
+    float: right;
+    color: #d9534f;
+  }
+  .name {
+    margin-bottom: @base-margin;
+    i {
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .modal-btn a {
+    width: 100%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .do-ajax {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    i {
+      margin-right: 10px;
+      font-size: 28px;
+    }
+    .res {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 120px;
+      top: 0;
+      bottom: 0;
+      height: 40px;
+    }
+  }
+}
+
+.login-btn a {
+  width: 100%;
+}
+.login .loading .fa {
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: 70px;
+  
+}
+@media (max-width: 767px) {
+  .modal-detail {
+    width: 75%;
+  } 
+}
+@keyframes shake-form {
+  15% {transform: translate(10px);}
+  30% {transform: translate(-10px);}
+  45% {transform: translate(6px);}
+  60% {transform: translate(-6px);}
+  75% {transform: translate(2px);}
+  90% {transform: translate(-2px);}
+}
+.shake-form {
+  animation: shake-form .6s;
+}

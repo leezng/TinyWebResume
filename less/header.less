@@ -1,0 +1,29 @@
+/**
+ * [header.less]头部参数及样式设置
+ */
+header {
+  position: relative;
+  height: @header-height;
+  z-index: @base-z-index * 5;
+  background-color: @background;
+  box-shadow: 0 0 2px 2px @background;
+  .nav {
+    a:hover {
+      color: spin(@background, 180);
+      text-shadow: 0 0 5px #fff;
+    }
+    .log-in-out {
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid contrast(@background);
+      color: contrast(@background);
+      cursor: pointer;
+      &:hover {
+        animation: none;
+        color: contrast(@background);
+        border-color: lighten(@background, 10%);
+        background-color: @background;
+      }
+    }
+  }
+}

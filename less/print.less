@@ -1,0 +1,65 @@
+/* 打印样式 */
+@media print {
+  header,
+  footer,
+  .page,
+  .re-sidebar,
+  .re-config,
+  .re-menu {
+    display: none;
+  }
+  .re-view {
+    margin: 0;
+    .resume-container {
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .re-resume {
+      .layout {
+        outline: none;
+      }
+      .module {
+        display: none;
+      }
+    }
+    .re-year + .re-group {
+      margin-left: 20%;
+      width: 80%;
+    }
+    .re-year {
+      position: absolute;
+      padding: 0 15px;
+      width: 20%;
+    }
+  }
+  .page-active {
+    display: block;
+  }
+  .col-sm-6 {
+    padding: 0 @base-padding;
+    width: 50%;
+    float: left;
+  }
+  .col-sm-12 {
+     padding: 0 @base-padding;
+    width: 100%;
+    float: left;
+  }
+  .col-sm-4 {
+     padding: 0 @base-padding;
+    width: 33.33%;
+    float: left;
+  }
+  .col-sm-8 {
+     padding: 0 @base-padding;
+    width: 66.66%;
+    float: left;
+  }
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  } 
+}

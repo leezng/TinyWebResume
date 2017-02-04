@@ -1,0 +1,24 @@
+header,
+footer,
+.page,
+.re-sidebar,
+.re-config,
+.re-menu {
+  display: none;
+}
+.re-view {
+  margin: 0;
+}
+.re-view .resume-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+}
+.page-active {
+  display: block;
+}
+@page {
+  size: 210mm 297mm;
+  margin: 0;
+}

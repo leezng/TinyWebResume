@@ -1,0 +1,437 @@
+/**
+ * [resume.less]简历页面
+ *
+ * @menu-height   {[中间菜单栏高]}
+ * @photo-padding {[简历个人照片内边距]}
+ * @font-size     {[简历内容基本字体大小,功能用于定义label标签宽]}
+ * @re-header     {[简历内容标题栏高]}
+ */
+@menu-height: 40px;
+@photo-padding: 2px;
+@font-size: 14px;
+@re-header: 30px;
+
+body.resume {
+  overflow: hidden;
+  header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  main {
+    padding: @header-height 0 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+/* re-sidebar 左侧工作栏 */
+@sidebar-li-height: 50px;
+.re-sidebar {
+  position: fixed;
+  top: @header-height;
+  padding: 0 @base-padding;
+  width: @sidebar-width;
+  height: calc(~"100%" - @header-height);
+  z-index: @base-z-index;
+  overflow-y: auto;
+  color: contrast(darken(@background, 10%));
+  background-color: darken(@background, 10%);
+  box-shadow: 5px -5px 5px darken(@background, 10%);
+  li {
+    padding: 0 @base-padding;
+    margin: @base-margin 0;
+    height: @sidebar-li-height;
+    width: 100%;
+    cursor: pointer;
+    i {
+      position: absolute;
+      line-height: @sidebar-li-height;
+      font-size: 24px;
+    }
+    span {
+      display: inline-block;
+      padding-left: 30px;
+      width: inherit;
+      line-height: @sidebar-li-height;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: nowrap;
+    }
+    &:last-child {
+      border: 1px dashed @background;
+      background-color: transparent;
+    }
+    .btn-main;
+  }
+}
+
+/* re-menu 中部菜单选项 */
+.re-menu {
+  padding: 0 5px;
+  height: @menu-height;
+  background-color: lighten(@background, 10%);
+  .zoom-in-out {
+    float: left;
+    height: inherit;
+    &:after {
+      display: inline-block;
+      padding: 0 5px;
+      float: right;
+      content: 'A4 - 'attr(zoom);
+      line-height: @menu-height;
+      color: contrast(@background);
+    }
+  }
+  .down-upload {
+    float: right;
+    height: inherit;
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    height: inherit;
+    line-height: @menu-height;
+    overflow: hidden;
+    color: contrast(@background);
+    i {
+      margin-right: 5px;
+    }
+    &:hover {
+      background-color: @background;
+    }
+    &[disabled] {
+      cursor: not-allowed;
+      background-color: inherit;
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+/* re-view 简历框 */
+.re-view {
+  position: relative;
+  margin-left: @sidebar-width;
+  margin-right: @config-width;
+  padding-bottom: @menu-height;
+  height: 100%;
+  label {
+    margin: 0;
+  }
+  .resume-container {
+    padding: @base-padding;
+    height: 100%;
+    overflow: auto;
+  }
+  .re-resume {
+    position: relative;
+    padding: @base-padding * 2;
+    margin: 0 auto;
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid;
+    transition: transform ease .5s;
+    transform-origin: left top;
+    .module {
+      position: absolute;
+      padding: @base-padding 5px;
+      top: 0;
+      left: 0;
+      opacity: .2;
+      cursor: pointer;
+      color: #000;
+      background-color: @background;
+      border-bottom-right-radius: @base-radius;
+      transition: all .5s ease;
+      &:hover {
+        opacity: 1;
+        color: #fff;
+      }
+    }
+    .layout {
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+      float: left;
+      outline: 1px dashed #ccc;
+    }
+  }
+  .re-box {
+    position: relative;
+    padding: 0 @base-padding;
+    margin: @base-margin 0;
+    &:hover:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: fade(lighten(@background, 10%), 20%);
+      pointer-events: none;
+    }
+    .cmpt-pro-down {
+      margin: 5px 0;
+      border-bottom: 4px solid;
+      border-radius: @base-radius;
+    }
+  }
+  .re-header {
+    position: relative;
+    margin: 0 -@base-margin 5px;
+    padding: 5px @base-padding;
+    height: @re-header;
+    white-space: nowrap;
+    background-color: lighten(@background, 40%);
+    color: contrast(lighten(@background, 40%));
+    &.hd-outline {
+      border-bottom: 2px solid;
+      background-color: transparent !important;
+      span {
+        position: absolute;
+        padding: 0 5px;
+        top: 0;
+        height: @re-header;
+        line-height: @re-header;
+        border: 2px solid;
+        border-bottom-color: #fff !important;
+        border-color: inherit;
+        background-color: transparent !important;
+      }
+    }
+    &.hd-bottom {  
+      background-color: transparent !important;
+      &:after {
+        content: '';
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+      }
+      span {
+        position: absolute;
+        padding: 0 @base-padding;
+        top: 0;
+        left: 0;
+        height: @re-header;
+        z-index: @base-z-index;
+        line-height: @re-header;
+        border-bottom: 2px solid;
+        border-color: inherit;
+        background-color: transparent !important;
+      }
+    }
+  }
+  .re-year {
+    position: absolute;
+    padding: 0 @base-padding;
+    width: 20%;
+    + .re-group {
+      margin-left: 20%;
+      width: 80%;
+    }
+  }
+  .re-group {
+    padding: 0 @base-padding;
+  }
+  .re-key {
+    text-align: right;
+  }
+  .re-detail {
+    list-style-position: inside;
+  }
+}
+
+.modal-module {
+  li {    
+    float: left;
+    margin: 0;
+    padding: 0 @base-padding;
+    width: 25%;
+    &.active > img,
+    img:hover {
+      outline: 1px solid @background;
+      cursor: pointer;
+    }
+  }
+  .button  {
+    margin-top: @base-margin;
+    a {
+      width: 49%;
+      float: left;
+      &:first-child {
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+/* re-info 个人信息 */
+.re-info {
+  line-height: 1.8;
+  label {
+    min-width: @font-size * 4;
+    text-align: right;
+    text-align: justify;
+    text-justify: distribute-all-lines; /* IE */
+    text-align-last: justify;
+  }
+  .col-xs-6:first-child {
+    float: right;
+    text-align: right;
+  }
+  .row.vertical {
+    .col-xs-6 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .user-name,
+  .user-intension,
+  .user-phone,
+  .user-email {
+    line-height: inherit;
+  }
+  .user-name {
+    font-size: 24px;
+  }
+  .user-photo {
+    position: relative;
+    display: inline-block;
+    padding: @photo-padding;
+    width: 25mm + @photo-padding;
+    height: 35mm + @photo-padding;
+    border: 1px dashed #ccc;
+    background-image: url('./image/uoload-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    &.rounded,
+    &.rounded img {
+      border-radius: @base-radius;
+    }
+    &.oval,
+    &.oval img {
+      border-radius: 50%;
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      font-size: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+/* re-config 右侧配置栏 */
+.re-config {
+  position: fixed;
+  top: @header-height;
+  right: 0;
+  padding: @base-padding 0;
+  width: @config-width;
+  height: calc(~"100%" - @header-height);
+  z-index: @base-z-index;
+  overflow: auto;
+  color: contrast(darken(@background, 10%));
+  background-color: darken(@background, 10%);
+  box-shadow: 5px -5px 5px darken(@background, 10%);
+  .header {
+    display: none;
+    text-align: center;
+    h5 {
+      padding: 0 @base-padding;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .base-button {
+      margin: @base-margin 0;
+      li:last-of-type {
+        margin: 0;
+      }
+      .pop-body {
+        left: -40px;
+        width: 120px;
+      }
+    }
+  }
+  .body {
+    padding: 0 @base-padding;
+    > li {
+      display: none;
+    }
+    .can-add-group {
+      .icon {
+        float: right;
+        cursor: pointer;
+      }
+      .form-group {
+        &:first-child .can-remove,
+        &:not(:first-child):not(:last-child) .can-add {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer {
+    display: none;
+    .body;
+    .btn {
+      width: 100%;
+    }
+  }
+  .form-control {
+    color: contrast(darken(@background, 10%));
+    background-color: transparent;
+  }
+  option {
+    background-color: darken(@background, 10%);
+  }
+  .input-group {
+    margin-bottom: 5px;
+  }
+  textarea {
+    resize: vertical;
+    word-break: break-all;
+  }
+}
+.re-row {
+  margin: 0 -3px;
+  & > div[class^="col"] {
+    padding: 0 3px;
+  }
+}
+
+/* 分点符号风格 */
+.re-resume {
+  &[symbol="decimal"] .re-detail {
+    list-style-type: decimal;
+  }
+  &[symbol|="re"] .re-detail {
+    list-style: none;
+    li:before {
+      margin-right: 8px;
+    }
+  }
+  &[symbol$="star"] .re-detail li:before {
+    content: "\2605";
+  }
+  &[symbol$="heart"] .re-detail li:before {
+    content: "\2665";
+  }
+  &[symbol$="correct"] .re-detail li:before {
+    content: "\2714";
+  }
+}
