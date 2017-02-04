@@ -1,0 +1,46 @@
+[
+  {
+    "type": "select",
+    "name": "select-box",
+    "label": "添加到",
+    "hidden": true,
+    "option": [{
+      "label": "盒子一",
+      "value": "One"
+    }, {
+      "label": "盒子二",
+      "value": "Two"
+    }]
+  }, {
+    "name": "header",
+    "label": "自定义标题",
+    "placeHolder": "Header"
+  }, {
+    "type": "group",
+    "name": "job-group",
+    "label": "工作经历详情",
+    "canAdd": true,
+    "option": [{
+      "value": "start",
+      "label": "起始年月",
+      "placeHolder": "XXXX.XX"
+    }, {
+      "value": "end",
+      "label": "结束年月",
+      "placeHolder": "XXXX.XX"
+    }, {
+      "value": "title",
+      "label": "企业",
+      "placeHolder": "Company"
+    }, {
+      "value": "key",
+      "label": "职位",
+      "placeHolder": "Job"
+    }, {
+      "type": "textarea",
+      "value": "details",
+      "label": "描述",
+      "placeHolder": "Details (如需分点，请按回车键区分)"
+    }]
+  }
+]

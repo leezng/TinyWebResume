@@ -1,0 +1,98 @@
+[
+  {
+    "type": "group",
+    "name": "general",
+    "label": "基本配置",
+    "id": "basic-general",
+    "option": [{
+      "type": "number",
+      "value": "top-bottom",
+      "label": "上下边距(px)",
+      "default": "30",
+      "min": "0",
+      "placeHolder": "上下边距(px)"
+    }, {
+      "type": "number",
+      "value": "left-right",
+      "label": "左右边距(px)",
+      "default": "30",
+      "min": "0",
+      "placeHolder": "左右边距(px)"
+    }, {
+      "type": "number",
+      "value": "font-size",
+      "label": "字体大小(px)",
+      "default": "14",
+      "min": "12",
+      "max": "20",
+      "placeHolder": "主体内容字体"
+    }, {
+      "type": "select",
+      "value": "layout",
+      "label": "页面布局",
+      "option": [{
+        "label": "默认单列",
+        "value": "0"
+      }, {
+        "label": "左右 1-2",
+        "value": "1-2"
+      }, {
+        "label": "左右 2-1",
+        "value": "2-1"
+      }]
+    }, {
+      "type": "select",
+      "value": "symbol",
+      "label": "分点符号",
+      "option": [{
+        "label": "实心圆 (默认)",
+        "value": "dist"
+      }, {
+        "label": "数字",
+        "value": "decimal"
+      }, {
+        "label": "星星",
+        "value": "re-star"
+      }, {
+        "label": "心形",
+        "value": "re-heart"
+      }, {
+        "label": "打勾",
+        "value": "re-correct"
+      }]
+    }]
+  }, {
+    "type": "group",
+    "name": "title",
+    "label": "标题栏配置",
+    "id": "basic-title",
+    "option": [{
+      "value": "color",
+      "label": "背景色调",
+      "default": "#c0edef",
+      "placeHolder": "请输入色值"
+    }, {
+      "value": "fr-color",
+      "label": "前景色调",
+      "default": "#000000",
+      "placeHolder": "请输入色值"
+    }, {
+      "type": "select",
+      "value": "style",
+      "label": "风格",
+      "option": [{
+        "label": "标准",
+        "value": "standard"
+      }, {
+        "label": "线条",
+        "value": "outline"
+      }, {
+        "label": "下划线",
+        "value": "bottom"
+      }, {
+        "label": "不显示",
+        "value": "none"
+      }]
+    }]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "type": "select",
+    "name": "select-box",
+    "label": "添加到",
+    "hidden": true,
+    "option": [{
+      "label": "盒子一",
+      "value": "One"
+    }, {
+      "label": "盒子二",
+      "value": "Two"
+    }]
+  }, {
+    "name": "header",
+    "label": "自定义标题",
+    "placeHolder": "Header"
+  }, {
+    "type": "select",
+    "name": "select-component",
+    "label": "请选择组件",
+    "option": [{
+      "label": "标准文段",
+      "value": "text"
+    }, {
+      "label": "直线百分比条",
+      "value": "line-down"
+    }]
+  }, {
+    "type": "group",
+    "name": "new-group",
+    "label": "经历详情",
+    "canAdd": true,
+    "option": [{
+      "value": "start",
+      "label": "起始年月",
+      "placeHolder": "XXXX.XX"
+    }, {
+      "value": "end",
+      "label": "结束年月",
+      "placeHolder": "XXXX.XX"
+    }, {
+      "value": "title",
+      "label": "主题",
+      "placeHolder": "Main"
+    }, {
+      "value": "key",
+      "label": "副题",
+      "placeHolder": "Sub"
+    }, {
+      "type": "textarea",
+      "value": "details",
+      "label": "描述",
+      "placeHolder": "Details (如需分点，请按回车键区分)"
+    }, {
+      "type": "number",
+      "value": "progress",
+      "label": "进度",
+      "min": "1",
+      "placeHolder": "请输入整数数字"
+    }]
+  }
+]

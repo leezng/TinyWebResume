@@ -1,0 +1,61 @@
+[
+  {
+    "type": "select",
+    "name": "select-box",
+    "label": "添加到",
+    "hidden": true,
+    "option": [{
+      "label": "盒子一",
+      "value": "One"
+    }, {
+      "label": "盒子二",
+      "value": "Two"
+    }]
+  }, {
+    "type": "select",
+    "name": "layout",
+    "label": "请选择布局",
+    "option": [{
+      "label": "水平 (默认)",
+      "value": "horizontal"
+    }, {
+      "label": "垂直排列",
+      "value": "vertical"
+    }]
+  }, {
+    "type": "group",
+    "name": "data",
+    "label": "请输入基本信息",
+    "option": [{
+      "value": "name",
+      "label": "姓名",
+      "placeHolder": "Name"
+    }, {
+      "value": "intension",
+      "label": "求职意向",
+      "placeHolder": "Job Intension"
+    }, {
+      "value": "phone",
+      "label": "电话",
+      "placeHolder": "Cellphone"
+    }, {
+      "value": "email",
+      "label": "邮箱",
+      "placeHolder": "Email"
+    }, {
+      "type": "select",
+      "value": "photo",
+      "label": "相片风格",
+      "option": [{
+        "label": "默认",
+        "value": "default"
+      }, {
+        "label": "圆角",
+        "value": "rounded"
+      }, {
+        "label": "椭圆",
+        "value": "oval"
+      }]
+    }]
+  }
+]
