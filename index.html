@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tinywin-PC</title>
+<!--   <script>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+  window.location = 'http://m.tinywin.top';
+</script> -->
+  <link rel="stylesheet" href="css/tiny.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="loading" id="loading">
+    <div class="anime anime-rippling">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div> 
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <div class="logo"><img src="image/logo.png"></div>
+      <div class="nav nav-right nav-shake">
+        <ul class="list-inline" id="nav">
+          <li><a href="#index">主页</a></li>
+          <li><a href="#resume">定制平台</a></li>
+          <li><a href="#about">关于</a></li>
+          <!-- <li class="dropdown">
+            <a href="javascript:">TESTA</a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:">TESTB</a></li>
+              <li><a href="javascript:">TESTB</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <a href="javascript:" class="nav-btn"></a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <div class="page" id="page-index">
+      <div class="slider" id="slider">
+        <div class="slider-container">
+          <div class="item active"><img src="./image/01.jpg"></div>
+          <div class="item"><img src="./image/02.jpg"></div>
+          <div class="item"><img src="./image/01.jpg"></div>
+          <div class="item"><img src="./image/02.jpg"></div>
+        </div>
+        <ul class="slider-panel list-inline">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="resume-show">
+          <h3>案例展示</h3>
+          <ul class="list-inline">
+            <li><img src="image/engineer.png"></li>
+            <li><img src="image/ui.png"></li>
+            <li><img src="image/engineer.png"></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="page-resume">
+      <div class="re-sidebar" id="re-sidebar">
+        <ul class="list-unstyled">
+          <li name="basic"><i class="icon icon-home"></i><span>综合设置</span></li>
+          <li name="info"><i class="icon icon-user"></i><span>个人信息</span></li>
+          <li name="edu"><i class="icon icon-edu"></i><span>教育信息</span></li>
+          <li name="job"><i class="icon icon-job"></i><span>工作经历</span></li>
+          <li name="project"><i class="icon icon-project"></i><span>项目/社团</span></li>
+          <li name="new" id="add-module"><i class="icon icon-add"></i><span>添加板块</span></li>
+        </ul>
+      </div>
+      <div class="re-view">
+        <div class="re-menu">
+          <div class="zoom-in-out" zoom="100%">
+            <a href="javascript:;" id="zoomIn"><i class="icon icon-add"></i></a>
+            <a href="javascript:;" id="zoomOut"><i class="icon icon-subtract"></i></a>
+          </div>
+          <div class="down-upload">
+            <a href="javascript:;" id="do-clear"><i class="icon icon-trash"></i>清空</a>
+            <a href="javascript:;" id="do-print"><i class="icon icon-print"></i>打印</a>
+            <a href="javascript:;" id="downloadJson"><i class="icon icon-download"></i>下载</a>
+            <a href="javascript:;" id="uploadJson"><i class="icon icon-upload"></i>上传
+              <input type="file" name="file">
+            </a>
+          </div>
+        </div>
+        <div class="resume-container">
+          <div class="re-resume js-re-resume">
+            <div class="module" id="do-module"><i class="icon icon-gift"></i>引用模板</div>
+            <div class="layout js-layout" id="layoutOne"></div>
+            <div class="layout js-layout" id="layoutTwo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="re-config" id="re-config">
+        <div class="header">
+          <h5></h5>
+          <ul class="list-inline base-button">
+            <li class="btn btn-main icon icon-ups js-shift-up" title="上移"></li>
+            <li class="btn btn-main icon icon-downs js-shift-down" title="下移"></li>
+            <li class="btn btn-main js-remove" title="删除"><i class="icon icon-trash"></i></li>
+          </ul>       
+        </div>
+        <ul class="body list-unstyled">
+          <li class="js-config-li" id="basic-config" box="One"></li>
+          <li class="js-config-li" id="info-config" box="One"></li>
+          <li class="js-config-li" id="edu-config" nums="1" type="standard" box="One"></li>
+          <li class="js-config-li" id="job-config" nums="1" box="One"></li>
+          <li class="js-config-li" id="project-config" nums="1" box="One"></li>
+        </ul>
+        <div class="footer">
+          <div class="row">
+            <div class="col-sm-6">
+              <a class="btn btn-cancel js-config-cancel">取消</a>
+            </div>
+            <div class="col-sm-6">
+              <a class="btn btn-main js-config-ok">保存</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-module" id="modal-module">
+        <div class="modal-detail">
+          <h4>引用模板</h4>
+          <ul class="row list-inline">
+            <li name="engineer"><img src="image/engineer.png"></li>
+            <li name="ui"><img src="image/ui.png"></li>
+          </ul>
+          <div class="button">                 
+            <a href="javascript:;" class="btn btn-cancel cancel-module">取消</a>
+            <a href="javascript:;" class="btn btn-main confirm-module">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="page-about">
+      <div class="container">
+        <div class="title">关于Tinywin</div>
+        <p>对于提倡一张A4纸构造简历的今天，我们并不需要实现太复杂的页面，在这种情况下，Web提供的能力正是恰到好处的。随着HTML5技术的日益成熟与流行，它所集成的SVG，Canvas等技术以及CSS3丰富多变的风格已经能在浏览器中实现很多惊艳的效果。Tinywin致力于提供一套完整、快速、便捷的Web简历可视化编辑方案，并为之不断完善。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>Copyright © 2016 Tinywin. All Rights Reserved.</footer>
+
+  <script src="./js/sea.js" id="seajsnode"></script>
+  <script type="text/javascript">
+    seajs.config({
+      alias: {
+        'jquery': 'jquery-2.1.4.min',
+        'underscore': 'underscore-min',
+        'tiny': 'tiny.min',
+      }
+    });
+    seajs.use(['jquery', 'underscore'], function () {
+      seajs.use(['tiny', 'main']);
+    });
+  </script>
+</body>
+</html>
