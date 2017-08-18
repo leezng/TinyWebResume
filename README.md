@@ -2,4 +2,4 @@
 
 一个 Web 简历生成工具，依赖于 JQuery
 
-You can design your web resume
+[demo](https://leezng.github.io/resume-generator/)
