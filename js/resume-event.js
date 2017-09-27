@@ -9,6 +9,7 @@ define(function (require, exports, module) {
     var $cfgId = $('#' + name + '-config');
     $('#re-config .header h5').text(title);
     $('#re-config .pop-body').hide();
+    $('#re-config .header .base-button').css('display', name === 'basic' ? 'none' : 'block');
     $cfgId.find('[name = header] input').val(title);
     $('.re-config .header, .re-config .footer').fadeIn();
     $cfgId.fadeIn().siblings().hide();
