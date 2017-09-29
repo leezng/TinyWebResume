@@ -914,8 +914,8 @@ body.resume main {
   width: 100%;
 }
 .re-config .form-control {
-  color: #ffffff;
-  background-color: transparent;
+  color: #333;
+  background-color: #fdfdfd;
 }
 .re-config option {
   background-color: #24888c;

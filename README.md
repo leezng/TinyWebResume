@@ -9,6 +9,6 @@
 ## TODO:
 
 * [x] 综合设置选项不可移动位置，不可删除
-* [ ] placeholder 色调冲突导致难以辨认
+* [x] placeholder 色调冲突导致难以辨认
 * [ ] 放大缩小按钮居中位置
 * [ ] don't use `window.confirm`
