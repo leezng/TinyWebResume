@@ -11,17 +11,35 @@
 @font-size: 14px;
 @re-header: 30px;
 
-body.resume {
-  overflow: hidden;
-  header {
-    position: fixed;
-    left: 0;
-    right: 0;
-  }
-  main {
-    padding: @header-height 0 0;
-    height: 100%;
+body {
+  &.resume {
     overflow: hidden;
+    header {
+      position: fixed;
+      left: 0;
+      right: 0;
+    }
+    main {
+      padding: @header-height 0 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  &.resume-initing:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25% 0;
+    box-sizing: border-box;
+    content: "waiting...";
+    text-align: center;
+    font-family: Consolas;
+    color: #fff;
+    font-size: 22px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 

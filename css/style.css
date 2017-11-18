@@ -535,6 +535,22 @@ body.resume main {
   height: 100%;
   overflow: hidden;
 }
+body.resume-initing:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25% 0;
+  box-sizing: border-box;
+  content: "waiting...";
+  text-align: center;
+  font-family: Consolas;
+  color: #fff;
+  font-size: 22px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 /* re-sidebar 左侧工作栏 */
 .re-sidebar {
   position: fixed;

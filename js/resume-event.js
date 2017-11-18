@@ -171,6 +171,29 @@ define(function (require, exports, module) {
     }
   });
 
+  // 生成pdf
+  $('#do-pdf').on('click', function () {
+    var resumeName = 'resume';
+    var $htmlcode = $('.js-re-resume')
+    $('body').addClass('resume-initing')
+    $htmlcode.css('border-color', 'transparent')
+    $('#do-module').hide()
+
+    html2canvas($htmlcode[0], {
+      onrendered: function (canvas) {
+        var imgData = canvas.toDataURL('image/png', 1);
+        var pdf = new jsPDF('', 'pt', 'a4');
+        pdf.addImage(imgData, 'PNG', 0, 0, 595.28, 592.28/canvas.width * canvas.height);
+        pdf.save(resumeName + '.pdf');
+        
+        $htmlcode.css('border-color', '#333')
+        $('#do-module').show()
+        $('body').removeClass('resume-initing')
+      },
+      height: 1286
+    });
+  })
+
   // 监听配置确认/取消并生效
   $('#re-config').on('click', '.js-config-ok, .js-config-cancel', function () {
     var cfgId = $('#re-config').find('.body > li:visible').attr('id');
