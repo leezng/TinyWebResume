@@ -1,8 +1,6 @@
-# Resume Generator
+# Resume Builder
 
-<https://leezng.github.io/resume-generator/>
-
-一个 Web 简历生成工具，依赖于 JQuery
+一个 Web 简历生成工具，依赖于 JQuery，[点击进入](https://leezng.github.io/resume-builder/#resume)
 
 ![简历编辑界面](./image/02.jpg)
 
